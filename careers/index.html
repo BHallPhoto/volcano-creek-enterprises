@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore career opportunities at Volcano Creek. Join our team and make an impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/light-theme.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Volcano Creek Careers</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/volcano-creek-ent-logo.png" alt="VC Trucking Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <ul class="h-font navi">
+                    <li class="active menu-li"><a class="" href="../index.html" active>Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="careers-title">
+        <div class="business-title careers-bg">
+            <div class="box">
+                <div class="container">
+                    <div class="description-header-career patua">
+                        <h2>Build Your Future With Us</h2>
+                        <h2>At Volcano Creek Enterprises</h2>
+                        <h3>Where Oppportunity, Growth, and Adventure Come Together</h3>
+                        <div class="description career-desc p-font">
+                            <p> 
+                                Join the Team at Volcano Creek Enterprises, where we take pride in hard work, 
+                                craftsmanship, and a deep respect for the land we work on. Our team is built on trust, skill, 
+                                and a commitment to doing every job the right way. We’re looking for dedicated individuals who 
+                                take their work seriously and aren’t afraid of a challenge. If you value quality, integrity, 
+                                and a strong team, we’d be proud to have you with us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application" id="application">
+        <div class="container">
+            <h1>Join Our Team</h1>
+            <p>At Volcano Creek, we are always looking for talented individuals to join our team. If you are interested in a career with us, please fill out the application form below.</p>
+
+
+
+
+            <!-- About Working Here -->
+
+            <h4 class="text-2xl font-semibold mb-2">Why Work With Volcano Creek Enterprises?</h4>
+            <p>
+            We believe in hands-on work, rugged reliability, and respect for the land. Whether you're operating heavy equipment or managing logistics, you’ll be part of a crew committed to professionalism, safety, and stewardship of our forests and roads.
+            </p>
+
+
+            <!-- Job Listings -->
+
+            <h3 class="text-2xl font-semibold mb-4">Current Openings</h3>
+
+            <!-- Example Job Listing -->
+            <div class="mechanic">
+                <h3 class="text-xl font-bold">Heavy Equipment Operator</h3>
+                <p class="text-sm text-gray-600">Location: Northern California | Full Time</p>
+                <p class="mt-2">Operate bulldozers, excavators, and other logging or land-clearing machinery in diverse terrain.</p>
+                <!-- <button class="mt-2 text-blue-600 underline" onclick="document.getElementById('job-title').value='Heavy Equipment Operator';document.getElementById('application-form').scrollIntoView({behavior:'smooth'});">
+                    Apply Now
+                </button> -->
+                <button class="btn waves-effect waves-light app-btn" onclick="toggleDiv()" name="heavy_equipment_operator">
+                    Apply Now
+                </button>
+                <div class="container form-container" id="content">
+                    <!-- <form action="#" method="POST" class="application-form">
+                        <div class="row two-form-field">
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="first-name" type="text" class="validate" name="first-name" required>
+                                <label for="first-name">First Name</label>
+                            </div>
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="last-name" type="text" class="validate" name="last-name" required>
+                                <label for="last-name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="address" type="text" class="validate" name="address" required>
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row two-form-field">
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="city" type="text" class="validate" name="city" required>
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s12 display-fix">
+                                <select id="state" name="state" required> 
+                                            <option value="" class="select-color" disabled selected>Select State</option>
+                                            <option value="AL">Alabama (AL)</option>
+                                            <option value="AK">Alaska (AK)</option>
+                                            <option value="AZ">Arizona (AZ)</option>
+                                            <option value="AR">Arkansas (AR)</option>
+                                            <option value="CA">California (CA)</option>
+                                            <option value="CO">Colorado (CO)</option>
+                                            <option value="CT">Connecticut (CT)</option>
+                                            <option value="DE">Delaware (DE)</option>
+                                            <option value="DC">District Of Columbia (DC)</option>
+                                            <option value="FL">Florida (FL)</option>
+                                            <option value="GA">Georgia (GA)</option>
+                                            <option value="HI">Hawaii (HI)</option>
+                                            <option value="ID">Idaho (ID)</option>
+                                            <option value="IL">Illinois (IL)</option>
+                                            <option value="IN">Indiana (IN)</option>
+                                            <option value="IA">Iowa (IA)</option>
+                                            <option value="KS">Kansas (KS)</option>
+                                            <option value="KY">Kentucky (KY)</option>
+                                            <option value="LA">Louisiana (LA)</option>
+                                            <option value="ME">Maine (ME)</option>
+                                            <option value="MD">Maryland (MD)</option>
+                                            <option value="MA">Massachusetts (MA)</option>
+                                            <option value="MI">Michigan (MI)</option>
+                                            <option value="MN">Minnesota (MN)</option>
+                                            <option value="MS">Mississippi (MS)</option>
+                                            <option value="MO">Missouri (MO)</option>
+                                            <option value="MT">Montana (MT)</option>
+                                            <option value="NE">Nebraska (NE)</option>
+                                            <option value="NV">Nevada (NV)</option>
+                                            <option value="NH">New Hampshire (NH)</option>
+                                            <option value="NJ">New Jersey (NJ)</option>
+                                            <option value="NM">New Mexico (NM)</option>
+                                            <option value="NY">New York (NY)</option>
+                                            <option value="NC">North Carolina (NC)</option>
+                                            <option value="ND">North Dakota (ND)</option>
+                                            <option value="OH">Ohio (OH)</option>
+                                            <option value="OK">Oklahoma (OK)</option>
+                                            <option value="OR">Oregon (OR)</option>
+                                            <option value="PA">Pennsylvania (PA)</option>
+                                            <option value="RI">Rhode Island (RI)</option>
+                                            <option value="SC">South Carolina (SC)</option>
+                                            <option value="SD">South Dakota (SD)</option>
+                                            <option value="TN">Tennessee (TN)</option>
+                                            <option value="TX">Texas (TX)</option>
+                                            <option value="UT">Utah (UT)</option>
+                                            <option value="VT">Vermont (VT)</option>
+                                            <option value="VA">Virginia (VA)</option>
+                                            <option value="WA">Washington (WA)</option>
+                                            <option value="WV">West Virginia (WV)</option>
+                                            <option value="WI">Wisconsin (WI)</option>
+                                            <option value="WY">Wyoming (WY)</option>
+                                </select>
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate" name="email" required>
+                                <span class="helper-text" data-error="wrong" data-success="right">Verify</span>
+                                <label for="email">E-Mail</label>
+                            </div>
+                        </div>
+                        <div class="row two-form-field">
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="tel" type="tel" class="validate" name="tel" required>
+                                <label for="tel">Telephone</label>
+                            </div>
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="birthday" type="text" class="datepicker" name="birthday" required>
+                                <label for="birthday">Birthday</label>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>Resume</span>
+                                        <input id="fileInput" type="file" accept="application/*">
+                                    </div>
+                                        <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload in .PDF .DOC or .DOCX format">
+                                        
+                                    </div>
+                                    <span id="fileVerify" class="helper-text" data-error="wrong" data-success="right"></span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="input-field center">
+                            <button class="btn waves-effect waves-light" type="submit" for="msgForm">Submit</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+            <div class="mechanic">
+                <h3 class="text-xl font-bold">Truck Driver</h3>
+                <p class="text-sm text-gray-600">Location: Northern California | Full Time</p>
+                <p class="mt-2">Haul Heavy Equipment and Hauling logs.</p>
+                <!-- <button class="mt-2 text-blue-600 underline" onclick="document.getElementById('job-title').value='Heavy Equipment Operator';document.getElementById('application-form').scrollIntoView({behavior:'smooth'});">
+                    Apply Now
+                </button> -->
+                <button class="btn waves-effect waves-light app-btn" onclick="toggleDiv()" name="truck_driver">
+                    Apply Now
+                </button>
+                <div class="container form-container" id="content">
+                    <!-- <form action="#" method="POST" class="application-form">
+                        <div class="row two-form-field">
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="first-name" type="text" class="validate" name="first-name" required>
+                                <label for="first-name">First Name</label>
+                            </div>
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="last-name" type="text" class="validate" name="last-name" required>
+                                <label for="last-name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="address" type="text" class="validate" name="address" required>
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row two-form-field">
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="city" type="text" class="validate" name="city" required>
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s12 display-fix">
+                                <select id="state" name="state" required> 
+                                            <option value="" class="select-color" disabled selected>Select State</option>
+                                            <option value="AL">Alabama (AL)</option>
+                                            <option value="AK">Alaska (AK)</option>
+                                            <option value="AZ">Arizona (AZ)</option>
+                                            <option value="AR">Arkansas (AR)</option>
+                                            <option value="CA">California (CA)</option>
+                                            <option value="CO">Colorado (CO)</option>
+                                            <option value="CT">Connecticut (CT)</option>
+                                            <option value="DE">Delaware (DE)</option>
+                                            <option value="DC">District Of Columbia (DC)</option>
+                                            <option value="FL">Florida (FL)</option>
+                                            <option value="GA">Georgia (GA)</option>
+                                            <option value="HI">Hawaii (HI)</option>
+                                            <option value="ID">Idaho (ID)</option>
+                                            <option value="IL">Illinois (IL)</option>
+                                            <option value="IN">Indiana (IN)</option>
+                                            <option value="IA">Iowa (IA)</option>
+                                            <option value="KS">Kansas (KS)</option>
+                                            <option value="KY">Kentucky (KY)</option>
+                                            <option value="LA">Louisiana (LA)</option>
+                                            <option value="ME">Maine (ME)</option>
+                                            <option value="MD">Maryland (MD)</option>
+                                            <option value="MA">Massachusetts (MA)</option>
+                                            <option value="MI">Michigan (MI)</option>
+                                            <option value="MN">Minnesota (MN)</option>
+                                            <option value="MS">Mississippi (MS)</option>
+                                            <option value="MO">Missouri (MO)</option>
+                                            <option value="MT">Montana (MT)</option>
+                                            <option value="NE">Nebraska (NE)</option>
+                                            <option value="NV">Nevada (NV)</option>
+                                            <option value="NH">New Hampshire (NH)</option>
+                                            <option value="NJ">New Jersey (NJ)</option>
+                                            <option value="NM">New Mexico (NM)</option>
+                                            <option value="NY">New York (NY)</option>
+                                            <option value="NC">North Carolina (NC)</option>
+                                            <option value="ND">North Dakota (ND)</option>
+                                            <option value="OH">Ohio (OH)</option>
+                                            <option value="OK">Oklahoma (OK)</option>
+                                            <option value="OR">Oregon (OR)</option>
+                                            <option value="PA">Pennsylvania (PA)</option>
+                                            <option value="RI">Rhode Island (RI)</option>
+                                            <option value="SC">South Carolina (SC)</option>
+                                            <option value="SD">South Dakota (SD)</option>
+                                            <option value="TN">Tennessee (TN)</option>
+                                            <option value="TX">Texas (TX)</option>
+                                            <option value="UT">Utah (UT)</option>
+                                            <option value="VT">Vermont (VT)</option>
+                                            <option value="VA">Virginia (VA)</option>
+                                            <option value="WA">Washington (WA)</option>
+                                            <option value="WV">West Virginia (WV)</option>
+                                            <option value="WI">Wisconsin (WI)</option>
+                                            <option value="WY">Wyoming (WY)</option>
+                                </select>
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate" name="email" required>
+                                <span class="helper-text" data-error="wrong" data-success="right">Verify</span>
+                                <label for="email">E-Mail</label>
+                            </div>
+                        </div>
+                        <div class="row two-form-field">
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="tel" type="tel" class="validate" name="tel" required>
+                                <label for="tel">Telephone</label>
+                            </div>
+                            <div class="input-field col s12 two-form-field-div">
+                                <input id="birthday" type="text" class="datepicker" name="birthday" required>
+                                <label for="birthday">Birthday</label>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>Resume</span>
+                                        <input id="fileInput" type="file" accept="application/*">
+                                    </div>
+                                        <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload in .PDF .DOC or .DOCX format">
+                                        
+                                    </div>
+                                    <span id="fileVerify" class="helper-text" data-error="wrong" data-success="right"></span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="input-field center">
+                            <button class="btn waves-effect waves-light" type="submit" for="msgForm">Submit</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-bg">
+        <div class="container">
+            <div class="row row-footer">
+                <div class="col s12 m6">
+                    <div class="cont1">
+                        <h5 class="h-font">Better yet, See us in person!</h5>
+                        <p class="p-font">We love our customers, so feel free to visit during regular business hours</p>
+                    </div>
+                    <div class="cont1">
+                        <h5 class="h-font">Volcano Creek Logging, Inc</h5>
+                        <p class="p-font">23850 Foresthill Rd, Foresthill Ca 95631</p>
+                        <p class="p-font">Tel: 530-367-4241</p>
+                    </div>
+                    <div class="cont1">
+                        <details id="smooth">
+                            <summary>
+                                <h5 class="h-font details-h5">Hours</h5>
+                                <span class="details-day-open">- &nbsp;&nbsp;&nbsp;<span id="open-closed"></span></span>
+                            </summary>
+                            <div class="det-content">
+                                <p class="day">Monday: </span><span class="hrs">8:00 am - 5:00 pm</p>
+                                <p class="day">Tuesday: </span><span class="hrs">9:00 am - 5:00 pm</p>
+                                <p class="day">Wednesday: </span><span class="hrs">9:00 am - 5:00 pm</p>
+                                <p class="day">Thursday: </span><span class="hrs">9:00 am - 5:00 pm</p>
+                                <p class="day">Friday: </span><span class="hrs">9:00 am - 5:00 pm</p>
+                                <p class="day">Saturday: </span><span class="hrs clsd">Closed</p>
+                                <p class="day">Sunday: </span><span class="hrs clsd">Closed</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="map">
+                        <iframe 
+                            id="map"
+                            width="100%" 
+                            height="350" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=Volcano%20Creek%20Enterprises,%20Foresthill,%20CA%2095631+(Volcano%20Creek%20Enterprises%20Inc.)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="social">
+            <h2>Social</h2>
+            <div class="icons">
+                <div class="fb">
+                    <a href="https://www.facebook.com/VolcanoCreekEnterprisesForesthill" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="white" width="40" height="40" data-ux="IconSocial" class="x-el x-el-svg c1-1 c1-2 c1-5c c1-1e c1-2c c1-9i c1-9j c1-4y c1-b c1-c c1-9k c1-9l c1-d c1-9m c1-9n c1-9o c1-9p c1-70 c1-x c1-7o c1-w c1-e c1-f c1-g"><path fill-rule="evenodd" d="M22 12.061C22 6.505 17.523 2 12 2S2 6.505 2 12.061c0 5.022 3.657 9.184 8.438 9.939v-7.03h-2.54v-2.91h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.197 2.238.197v2.476h-1.26c-1.243 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.908h-2.33V22c4.78-.755 8.437-4.917 8.437-9.939z"></path></svg>
+                     </a>
+                </div>
+                <div class="insta">
+                     <a href="https://www.instagram.com/volcano_creek_trucking_inc" target="_blank">
+                         <svg viewBox="0 0 24 24" fill="white" width="40" height="40" data-ux="IconSocial" class="x-el x-el-svg c1-1 c1-2 c1-5c c1-1e c1-2c c1-9i c1-9j c1-4y c1-b c1-c c1-9k c1-9l c1-d c1-9m c1-9n c1-9o c1-9p c1-70 c1-x c1-7o c1-w c1-e c1-f c1-g"><path d="M16.604 8.516c.13.35.198.719.203 1.091.033.622.033.811.033 2.386 0 1.574-.004 1.763-.033 2.385a3.273 3.273 0 0 1-.203 1.091 1.956 1.956 0 0 1-1.12 1.12c-.35.13-.719.198-1.091.204-.622.032-.811.032-2.386.032-1.574 0-1.763-.003-2.385-.032a3.273 3.273 0 0 1-1.091-.204 1.956 1.956 0 0 1-1.12-1.12 3.273 3.273 0 0 1-.204-1.09c-.032-.623-.032-.812-.032-2.386 0-1.575.003-1.764.032-2.386.006-.372.074-.741.204-1.09a1.956 1.956 0 0 1 1.12-1.12c.35-.13.718-.199 1.09-.204.623-.033.812-.033 2.386-.033 1.575 0 1.764.004 2.386.033.372.005.741.074 1.09.203.515.2.922.606 1.12 1.12zM12 15.033a3.033 3.033 0 1 0 0-6.066 3.033 3.033 0 0 0 0 6.066zm3.153-5.477a.71.71 0 1 0 0-1.418.71.71 0 0 0 0 1.418zM12 13.967a1.967 1.967 0 1 1 0-3.934 1.967 1.967 0 0 1 0 3.934zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10A10 10 0 0 0 12 2zm5.87 12.433c-.01.49-.102.974-.274 1.432a3.018 3.018 0 0 1-1.727 1.728 4.335 4.335 0 0 1-1.433.272c-.629.03-.829.037-2.432.037-1.604 0-1.819 0-2.433-.037a4.335 4.335 0 0 1-1.433-.272 3.018 3.018 0 0 1-1.727-1.728 4.335 4.335 0 0 1-.273-1.432c-.029-.63-.036-.83-.036-2.433 0-1.604 0-1.818.036-2.433.01-.49.102-.974.273-1.432a3.018 3.018 0 0 1 1.727-1.728 4.335 4.335 0 0 1 1.433-.272c.629-.03.829-.037 2.433-.037 1.603 0 1.818 0 2.432.037.49.009.974.101 1.433.272.794.307 1.42.934 1.727 1.728.172.458.264.943.273 1.432.03.63.036.83.036 2.433 0 1.604-.007 1.804-.036 2.433z"></path></svg>
+                    </a>
+                </div>
+            </div>
+             <div class="info">
+                <span class="email-us">E-Mail us, or give us a call!</span>
+                <p><a href="mailto:vctrucking@sebastiancorp.net">vctrucking@sebastiancorp.net</a> <br> <a href="tel:5303675629">Telephone: 530-367-5629</a></p>
+                <p class="addy"><a href="https://www.google.com/maps/search/?api=1&query=Volcano+Creek+Enterprises" target="_blank">Address: 23850 Foresthill Rd</a></p>
+            </div>
+        </div>
+        <div class="cp">
+            <p class="copy">Copyright &#169; 2024 Volcano Creek Enterprises Inc. - All Rights Reserved.</p>
+            <p class="copy">Made with <span class="heart">&#10084;</span> by Bristol Hall</p>
+        </div>
+    </footer>
+    
+    <script src="../js/animate.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        const bday = document.getElementById("birthday");
+        // bday.addEventListener("click", (e) => {
+        //     const bdayInput = document.querySelector(".datepicker-done");
+        //     bdayInput.addEventListener("click", (e) => {
+        //         bday.scrollIntoView({behavior: "smooth", block: "center"});
+        //     });
+        // });
+        // document.getElementById('fileInput').addEventListener('change', function () {
+        //     const fileVerify = document.getElementById("fileVerify");
+        //     const file = this.files[0];
+
+        //     if (!isValidFile(file)) {
+        //         this.value = ''; // Clear input if invalid
+        //         // You can trigger your own error display here
+        //         fileVerify.innerText = "Invalid Type, Accepted File Types: PDF, DOC, and DOCX";
+        //         fileVerify.style.color = "#F44336";
+        //         fileVerify.style.fontFamily = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif";
+        //     } else {
+        //         // Proceed if valid
+        //         fileVerify.innerText = "Valid File Type";
+        //         fileVerify.style.color = "#4CAF50";
+        //     }
+        // });
+
+
+        let isOpen = false;
+
+        function toggleDiv() {
+            const content = document.getElementById('content');
+
+            if (!isOpen) {
+                // Expand
+                const fullHeight = content.scrollHeight + "px";
+                content.style.height = fullHeight;
+            } else {
+                // Collapse
+                content.style.height = content.scrollHeight + "px"; // Set height first
+                requestAnimationFrame(() => {
+                content.style.height = "0";
+            });
+        }
+
+        isOpen = !isOpen;
+        }
+
+    </script>
+</body>
+</html>
