@@ -82,11 +82,11 @@
                 <!-- <button class="mt-2 text-blue-600 underline" onclick="document.getElementById('job-title').value='Heavy Equipment Operator';document.getElementById('application-form').scrollIntoView({behavior:'smooth'});">
                     Apply Now
                 </button> -->
-                <button class="btn waves-effect waves-light app-btn" onclick="toggleDiv()" name="heavy_equipment_operator">
+                <button class="btn waves-effect waves-light app-btn content-operator" onclick="toggleDiv('content-operator')" name="heavy_equipment_operator">
                     Apply Now
                 </button>
-                <div class="container form-container" id="content">
-                    <!-- <form action="#" method="POST" class="application-form">
+                <div class="container form-container" id="content-operator">
+                    <form action="#" method="POST" class="application-form">
                         <div class="row two-form-field">
                             <div class="input-field col s12 two-form-field-div">
                                 <input id="first-name" type="text" class="validate" name="first-name" required>
@@ -175,7 +175,7 @@
                         </div>
                         <div class="row two-form-field">
                             <div class="input-field col s12 two-form-field-div">
-                                <input id="tel" type="tel" class="validate" name="tel" required>
+                                <input id="tel" type="tel" class="validate" name="tel" placeholder="e.g. 530-555-1234" required>
                                 <label for="tel">Telephone</label>
                             </div>
                             <div class="input-field col s12 two-form-field-div">
@@ -203,7 +203,7 @@
                         <div class="input-field center">
                             <button class="btn waves-effect waves-light" type="submit" for="msgForm">Submit</button>
                         </div>
-                    </form> -->
+                    </form>
                 </div>
             </div>
             <div class="mechanic">
@@ -213,11 +213,11 @@
                 <!-- <button class="mt-2 text-blue-600 underline" onclick="document.getElementById('job-title').value='Heavy Equipment Operator';document.getElementById('application-form').scrollIntoView({behavior:'smooth'});">
                     Apply Now
                 </button> -->
-                <button class="btn waves-effect waves-light app-btn" onclick="toggleDiv()" name="truck_driver">
+                <button class="btn waves-effect waves-light app-btn content-driver" onclick="toggleDiv('content-driver')" name="truck_driver">
                     Apply Now
                 </button>
-                <div class="container form-container" id="content">
-                    <!-- <form action="#" method="POST" class="application-form">
+                <div class="container form-container" id="content-driver">
+                    <form action="#" method="POST" class="application-form">
                         <div class="row two-form-field">
                             <div class="input-field col s12 two-form-field-div">
                                 <input id="first-name" type="text" class="validate" name="first-name" required>
@@ -231,7 +231,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <input id="address" type="text" class="validate" name="address" required>
-                                <label for="address">Address</label>
+        Win                        <label for="address">Address</label>
                             </div>
                         </div>
                         <div class="row two-form-field">
@@ -306,7 +306,7 @@
                         </div>
                         <div class="row two-form-field">
                             <div class="input-field col s12 two-form-field-div">
-                                <input id="tel" type="tel" class="validate" name="tel" required>
+                                <input id="tel" type="tel" class="validate" name="tel" placeholder="e.g. 530-555-1234" required>
                                 <label for="tel">Telephone</label>
                             </div>
                             <div class="input-field col s12 two-form-field-div">
@@ -334,7 +334,7 @@
                         <div class="input-field center">
                             <button class="btn waves-effect waves-light" type="submit" for="msgForm">Submit</button>
                         </div>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </div>
@@ -420,49 +420,63 @@
     <script src="../js/materialize.min.js"></script>
     <script src="../js/script.js"></script>
     <script>
+        // Format telephone input with dashes on blur
+        document.addEventListener('DOMContentLoaded', function () {
+            var telInput = document.getElementById('tel');
+            if (telInput) {
+                telInput.addEventListener('blur', function (e) {
+                    let x = e.target.value.replace(/\D/g, '').slice(0, 10); // Only digits, max 10
+                    let formatted = x;
+                    if (x.length > 6) {
+                        formatted = x.slice(0,3) + '-' + x.slice(3,6) + '-' + x.slice(6);
+                    } else if (x.length > 3) {
+                        formatted = x.slice(0,3) + '-' + x.slice(3);
+                    }
+                    e.target.value = formatted;
+                });
+            }
+        });
         const bday = document.getElementById("birthday");
-        // bday.addEventListener("click", (e) => {
-        //     const bdayInput = document.querySelector(".datepicker-done");
-        //     bdayInput.addEventListener("click", (e) => {
-        //         bday.scrollIntoView({behavior: "smooth", block: "center"});
-        //     });
-        // });
-        // document.getElementById('fileInput').addEventListener('change', function () {
-        //     const fileVerify = document.getElementById("fileVerify");
-        //     const file = this.files[0];
+        bday.addEventListener("click", (e) => {
+            const bdayInput = document.querySelector(".datepicker-done");
+            bdayInput.addEventListener("click", (e) => {
+                bday.scrollIntoView({behavior: "smooth", block: "center"});
+            });
+        });
+        document.getElementById('fileInput').addEventListener('change', function () {
+            const fileVerify = document.getElementById("fileVerify");
+            const file = this.files[0];
 
-        //     if (!isValidFile(file)) {
-        //         this.value = ''; // Clear input if invalid
-        //         // You can trigger your own error display here
-        //         fileVerify.innerText = "Invalid Type, Accepted File Types: PDF, DOC, and DOCX";
-        //         fileVerify.style.color = "#F44336";
-        //         fileVerify.style.fontFamily = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif";
-        //     } else {
-        //         // Proceed if valid
-        //         fileVerify.innerText = "Valid File Type";
-        //         fileVerify.style.color = "#4CAF50";
-        //     }
-        // });
+            if (!isValidFile(file)) {
+                this.value = ''; // Clear input if invalid
+                // You can trigger your own error display here
+                fileVerify.innerText = "Invalid Type, Accepted File Types: PDF, DOC, and DOCX";
+                fileVerify.style.color = "#F44336";
+                fileVerify.style.fontFamily = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif";
+            } else {
+                // Proceed if valid
+                fileVerify.innerText = "Valid File Type";
+                fileVerify.style.color = "#4CAF50";
+            }
+        });
 
 
-        let isOpen = false;
-
-        function toggleDiv() {
-            const content = document.getElementById('content');
+        function toggleDiv(contentId) {
+            const content = document.getElementById(contentId);
+            const isOpen = content.style.height && content.style.height !== "0px";
+            const btnId = document.getElementsByClassName(contentId);
 
             if (!isOpen) {
-                // Expand
                 const fullHeight = content.scrollHeight + "px";
                 content.style.height = fullHeight;
+                btnId[0].innerText = "CANCEL";
             } else {
-                // Collapse
-                content.style.height = content.scrollHeight + "px"; // Set height first
+                content.style.height = content.scrollHeight + "px";
                 requestAnimationFrame(() => {
-                content.style.height = "0";
-            });
-        }
-
-        isOpen = !isOpen;
+                    content.style.height = "0";
+                });
+                btnId[0].innerText = "APPLY NOW";
+            }
         }
 
     </script>
